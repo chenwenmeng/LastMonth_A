@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_name"
+            android:text="清泠"
+            android:layout_alignBottom="@id/item_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ff30"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| 以实名认证"
+            android:layout_toRightOf="@id/item_name"
+            android:layout_alignBottom="@id/item_name"
+            android:textColor="#ff30"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自线上采访"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/item_name"
+            android:textColor="#ff30"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="26岁"
+            android:textColor="#ffffff"
+            android:id="@+id/item_age"
+            android:layout_marginLeft="20sp"
+            android:background="#aa1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="银行"
+            android:textColor="#ffffff"
+            android:id="@+id/item_zhiye"
+            android:layout_toRightOf="@id/item_age"
+            android:layout_marginLeft="20sp"
+            android:background="#fa9852"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/r2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20sp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduction"/>
+
+
+</RelativeLayout>
